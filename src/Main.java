@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 100;  // начальный баланс
-        int y = 10000; //пополнение баланса
+        int balans = 100;  // начальный баланс
+        int refill = 10000; //пополнение баланса
         int bonus;
 
-        if (y > 1000) {
-            bonus = y / 100;
+        if (refill > 1000) {
+            bonus = refill / 100;
         } else {
             bonus = 0;
         }
-        int z = x + y + bonus;
+        int newBalans = balans + refill + bonus;
 
-        System.out.println("Итоговый баланс "+ z);
+        System.out.println("Итоговый баланс "+ (newBalans));
 
     }
 }
